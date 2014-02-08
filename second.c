@@ -69,7 +69,7 @@ int main()
                     }
                                         }
                     printf("\nThe number of page faults are %d\n",count);
-                    getche();
+//                    getche();
 return 0;
 }
 
