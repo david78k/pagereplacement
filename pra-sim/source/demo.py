@@ -393,7 +393,9 @@ for i in algorithms.index:
 
 ---
 g = Gnuplot.Gnuplot()
-g('set data style lines')
+#g('set data style linetype')
+#g('set data style lines')
+g('set style data lines')
 g('set yrange [0:]')
 g.plot(*d)
 ---
@@ -432,7 +434,9 @@ for i in range(1, 11):   # Iterate bit field length from 1 to 10.
 
 ---
 g = Gnuplot.Gnuplot()
-g('set data style lines')
+#g('set data style linetype')
+#g('set data style lines')
+g('set style data lines')
 g('set hidden3d')
 g('set ticslevel 0')
 g('set zrange [0:]')
