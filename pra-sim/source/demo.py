@@ -398,6 +398,7 @@ g = Gnuplot.Gnuplot()
 g('set style data lines')
 g('set yrange [0:]')
 g.plot(*d)
+g.save('demo.png')
 ---
 
 ***
