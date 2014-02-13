@@ -2,8 +2,11 @@
 
 algorithms implemented
 - fifo, second chance, LRU, aging, NRU, optimal
+
 algorithms to be implemented
-- Markov 1997, random, NFU, clock, WS, WSclock 1981, CAR 2004, ARC 2003
+- CAR 2004, ARC 2003, time-series, Markov 2013
+optionally
+- Markov 1997, random, NFU, clock, WS, WSclock 1981, 
 
 The most important methods in this module are the swapout methods.
 They remove a page from memory and return its number."""
