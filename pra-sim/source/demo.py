@@ -397,8 +397,11 @@ g = Gnuplot.Gnuplot()
 #g('set data style lines')
 g('set style data lines')
 g('set yrange [0:]')
+g.xlabel('working set size in pages')
+g.ylabel('ratio of page faults to accesses')
 g('set term png')
 g('set out "demo.png"')
+
 g.plot(*d)
 ---
 
