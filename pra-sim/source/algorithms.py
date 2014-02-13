@@ -1,7 +1,7 @@
 """Several page replacement algorithms.
 
 algorithms implemented
-- fifo, second chance, LRU, aging, NRU, optimal
+- FIFO, SecondChance, LRU, Aging, NRU, Optimal
 
 algorithms to be implemented
 - CAR 2004, ARC 2003, time-series, Markov 2013
