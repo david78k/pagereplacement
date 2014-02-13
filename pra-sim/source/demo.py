@@ -397,8 +397,9 @@ g = Gnuplot.Gnuplot()
 #g('set data style lines')
 g('set style data lines')
 g('set yrange [0:]')
+g('set term png')
+g('set out "demo.png"')
 g.plot(*d)
-g.save('demo.png')
 ---
 
 ***
