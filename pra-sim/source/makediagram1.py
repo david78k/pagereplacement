@@ -17,7 +17,7 @@ for i in [algorithms.FIFO, algorithms.SecondChance, algorithms.NRU,
     # List of tupels of (ws_length, page_faults_to_accesses_ratio).
     ratios = []
     #for j in range(1, 61):
-    for j in range(1, 2):
+    for j in range(1, 5):
         mms = i(64)    # Instantiate.
         mms.shift = 200
         mms.firstbit = 1 << 7
