@@ -13,7 +13,7 @@ import Gnuplot
 
 d = []    # List of gnuplot data
 for i in [algorithms.FIFO, algorithms.SecondChance, algorithms.NRU,
-          algorithms.LRU, algorithms.Aging, algorithms.Optimal]:
+          algorithms.LRU, algorithms.Aging]: #, algorithms.Optimal]:
     # List of tupels of (ws_length, page_faults_to_accesses_ratio).
     ratios = []
     for j in range(1, 61):
