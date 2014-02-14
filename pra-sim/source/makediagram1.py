@@ -30,6 +30,7 @@ for i in [algorithms.FIFO, algorithms.SecondChance, algorithms.NRU,
 g = Gnuplot.Gnuplot()
 #g('set data style lines')
 #g('set style data lines')
+g('set style data linespoints')
 g('set yrange [0:]')
 g('set terminal epslatex monochrome')
 g('set output "diagram1.eps"')
