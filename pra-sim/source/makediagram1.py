@@ -16,7 +16,8 @@ for i in [algorithms.FIFO, algorithms.SecondChance, algorithms.NRU,
           algorithms.LRU, algorithms.Aging]: #, algorithms.Optimal]:
     # List of tupels of (ws_length, page_faults_to_accesses_ratio).
     ratios = []
-    for j in range(1, 61):
+    #for j in range(1, 61):
+    for j in range(1, 2):
         mms = i(64)    # Instantiate.
         mms.shift = 200
         mms.firstbit = 1 << 7
@@ -28,7 +29,7 @@ for i in [algorithms.FIFO, algorithms.SecondChance, algorithms.NRU,
 
 g = Gnuplot.Gnuplot()
 #g('set data style lines')
-g('set style data lines')
+#g('set style data lines')
 g('set yrange [0:]')
 g('set terminal epslatex monochrome')
 g('set output "diagram1.eps"')
