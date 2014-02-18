@@ -19,15 +19,31 @@ import inspect
 import sys
 
 class PRE(mms.MMS):
-
+	def setup(self);
+	def precopy(self):
+	def stopandcopy(self):
 
 class POST(mms.MMS):
+	def setup(self);
+	def stopandcopy(self):
+	def postcopy(self):
 
 
 class HYBRID(mms.MMS):
+	def setup(self);
+	def precopy(self):
+	def stopandcopy(self):
+	def postcopy(self):
+
 
 class PROHYB(mms.MMS):
+	def setup(self);
 
+	def precopy(self):
+
+	def stopandcopy(self):
+
+	def postcopy(self):
 
 """Several page replacement algorithms.
 
