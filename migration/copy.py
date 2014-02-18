@@ -1,4 +1,4 @@
-"""Several page replacement algorithms.
+"""Several page copy algorithms.
 
 algorithms implemented
 - 
@@ -25,7 +25,13 @@ class HYBRID(mms.MMS):
 
 class PROHYB(mms.MMS):
 
+
+"""Several page replacement algorithms.
+
+""" 
+
 class FIFO(mms.MMS):
+
 
     """FIFO (first-in-first-out) algorithm."""
 

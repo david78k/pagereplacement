@@ -1,5 +1,5 @@
 run:
-	./makediagram1.py
+	./diagram1.py
 
 upload:
 	git add .

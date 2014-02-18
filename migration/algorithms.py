@@ -1,3 +1,34 @@
+import mms
+import inspect
+import sys
+
+"""Several page copy algorithms.
+
+algorithms implemented
+-
+
+algorithms to be implemented
+- precopy, postcopy, hybrid, pro-hybrid
+
+"""
+
+# Written by Tae Seung Kang, 2/18/2014
+
+import mms
+import inspect
+import sys
+
+class PRE(mms.MMS):
+
+
+class POST(mms.MMS):
+
+
+class HYBRID(mms.MMS):
+
+class PROHYB(mms.MMS):
+
+
 """Several page replacement algorithms.
 
 algorithms implemented
@@ -14,10 +45,6 @@ They remove a page from memory and return its number."""
 
 # Written by Felix Wiemann <http://www.ososo.de/>, licensed under GPL-2.
 
-
-import mms
-import inspect
-import sys
 
 class FIFO(mms.MMS):
 
