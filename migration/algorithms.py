@@ -13,37 +13,41 @@ algorithms to be implemented
 """
 
 # Written by Tae Seung Kang, 2/18/2014
-
-import mms
-import inspect
-import sys
-
+"""
 class PRE(mms.MMS):
-	def setup(self);
+	def setup(self):
+
 	def precopy(self):
+
 	def stopandcopy(self):
 
 class POST(mms.MMS):
-	def setup(self);
+	def setup(self):
+
 	def stopandcopy(self):
+
 	def postcopy(self):
 
 
 class HYBRID(mms.MMS):
-	def setup(self);
+	def setup(self):
+
 	def precopy(self):
+
 	def stopandcopy(self):
+
 	def postcopy(self):
 
 
 class PROHYB(mms.MMS):
-	def setup(self);
+	def setup(self):
 
 	def precopy(self):
 
 	def stopandcopy(self):
 
 	def postcopy(self):
+"""
 
 """Several page replacement algorithms.
 
