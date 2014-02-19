@@ -13,41 +13,65 @@ algorithms to be implemented
 """
 
 # Written by Tae Seung Kang, 2/18/2014
-"""
+
 class PRE(mms.MMS):
-	def setup(self):
+	#def setup(self):
+
+	def migrate(self):
+		self.precopy()
 
 	def precopy(self):
+		#iterate()
+		self.dirtyrate = 0
 
-	def stopandcopy(self):
+	#def stopandcopy(self): 
+		# send CPU and device info
+		# self.downtime = cd/b
+		# self.totaltime += self.downtime
+		# self.totaldata = cd
+		# self.rpf = 
+	
 
 class POST(mms.MMS):
-	def setup(self):
+	#def setup(self):
 
-	def stopandcopy(self):
+	def migrate(self):
+		self.postcopy()
+
+	#def stopandcopy(self):
 
 	def postcopy(self):
+		self.done = True
 
 
 class HYBRID(mms.MMS):
-	def setup(self):
+	#def setup(self):
+
+	def migrate(self):
+		self.precopy()
 
 	def precopy(self):
+		self.done = True
 
-	def stopandcopy(self):
+	#def stopandcopy(self):
 
 	def postcopy(self):
+		self.done = True
 
 
 class PROHYB(mms.MMS):
-	def setup(self):
+	#def setup(self):
+
+	def migrate(self):
+		self.precopy()
 
 	def precopy(self):
+		self.done = True
 
-	def stopandcopy(self):
+	#def stopandcopy(self):
 
 	def postcopy(self):
-"""
+		self.done = True
 
 """Several page replacement algorithms.
 

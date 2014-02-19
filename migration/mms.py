@@ -38,6 +38,9 @@ class MMS:
 
         self.memsize = num
 
+	# network bandwidth in mbps
+	self.bandwidth = 1000
+
         # Track swap-ins.
 
         self.swapins = 0
@@ -56,7 +59,15 @@ class MMS:
         import random
         self.rand = random.Random(42)
 
+    """ page copy """
+    """    def migrate(self):
+	self.precopy()		
 
+    def precopy(self):
+	self.memsize -= 1
+    """
+
+    """ page replacement """
     def read(self, page):
         
         """Read a page.

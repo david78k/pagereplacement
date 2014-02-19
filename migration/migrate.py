@@ -17,8 +17,10 @@ virtualpages = 10000 # total number of virtual pages
 accesscount = 100000 # total number of memory access
 
 d = []    # List of gnuplot data
-for i in [algorithms.FIFO, algorithms.SecondChance, algorithms.NRU,
+"""for i in [algorithms.FIFO, algorithms.SecondChance, algorithms.NRU,
           algorithms.LRU, algorithms.Aging]: #, algorithms.Optimal]:
+"""
+for i in [algorithms.PRE]:
     # List of tupels of (ws_length, page_faults_to_accesses_ratio).
     ratios = []
     for j in range(1, 5):
@@ -27,6 +29,8 @@ for i in [algorithms.FIFO, algorithms.SecondChance, algorithms.NRU,
         mms.shift = 200	# for Aging and NRU algorithms
         mms.firstbit = 1 << 7 # for Aging algorithm
 
+	mms.migrate()
+"""
 	# create a working set from virtual page numbers ranging 0 to 9999
         ws = access.wsmake(mem=range(virtualpages), rand=random, size=j)
 
@@ -57,3 +61,4 @@ g('set output "migrate.png"')
 g.plot(*d)
 
 #print "\nNow move diagram1.* to ../"
+"""
