@@ -12,6 +12,7 @@ import simulate
 import Gnuplot
 
 physicalpages = 64 # total number of physical pages
+physicalpages = 5 # total number of physical pages
 virtualpages = 10000 # total number of virtual pages
 accesscount = 100000 # total number of memory access
 
@@ -46,13 +47,13 @@ g = Gnuplot.Gnuplot()
 g('set style data linespoints')
 g('set yrange [0:]')
 g('set terminal epslatex monochrome')
-g('set output "diagram1.eps"')
+g('set output "migrate.eps"')
 g('set xlabel "working set size in pages"')
 g('set ylabel "ratio of page faults to accesses"')
 g.plot(*d)
 
 g('set terminal png')
-g('set output "diagram1.png"')
+g('set output "migrate.png"')
 g.plot(*d)
 
 #print "\nNow move diagram1.* to ../"
